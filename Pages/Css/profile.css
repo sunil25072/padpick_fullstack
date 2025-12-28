@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: #000000;
+    color: white;
+    padding: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+
+/* Profile Page */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.profile-card {
+    background: white;
+    width: 320px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-top: 270px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-card h2 {
+    margin-bottom: 5px;
+}
+
+.email {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.profile-info p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.edit-btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #667eea;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #5a67d8;
+}
+.love{
+    text-decoration: none;
+}
+footer {
+    padding: 30px;
+    text-align: center;
+    background: black;
+    color: white;
+    margin-top: 203px;
+        }

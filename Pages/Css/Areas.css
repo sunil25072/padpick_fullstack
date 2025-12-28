@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #f4f6f8;
+    color: #333;
+    }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px;
+    background: #000000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    color: white;
+    font-size: 16px;
+}
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e5e5;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #007bff;
+}
+.container {
+    padding: 20px 0px 0px 30px;
+    align-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+    justify-items: center;
+
+}
+.area-card:hover{
+    transform: scale(1.02);
+}
+
+.area-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    width: 300px;
+}
+
+.area-card img {
+    width: 270px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.area-card a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 100px;
+    color: rgb(0, 0, 0);
+}
+
+
+.back-btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    color: white;
+        }
+
+.back-btn:hover {
+    background-color: #ff7300;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: black;
+    color: white;
+        }
+
+        
+#copy{
+    text-align: center;
+}
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr; 
+        padding: 0px 0px 0px 0px;
+        justify-content: center;
+    }
+    .header {
+        font-size: 22px;
+    }
+    .back-btn {
+        width: 50%;
+        text-align: center;
+    }
+}    

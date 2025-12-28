@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body styling */
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px;
+    background: #000000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    color: white;
+    font-size: 16px;
+}
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e5e5;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #007bff;
+}
+
+/* Main layout */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 40px;
+}
+
+/* Plan card */
+.container {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  padding: 35px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Plan title */
+.container h2 {
+  color: #000000;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+/* Plan features */
+.container ul {
+  list-style: none;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.container ul li {
+  background: #f8f9fc;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.container ul li:hover {
+  background: #eef2ff;
+}
+
+/* Pay button */
+.pay-btn {
+  display: inline-block;
+  background:black;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 40px;
+  border-radius: 10px;
+  margin-top: 25px;
+  transition: 0.3s ease;
+}
+
+.pay-btn:hover {
+  background-color: #ab9c9c;
+}
+
+/* Footer */
+footer {
+  background: #000000;
+  color: #ddd;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 0.95rem;
+}
+
+/* ----------- Responsive Design ----------- */
+@media (max-width: 480px) {
+  header {
+    font-size: 1.5rem;
+    padding: 18px 0;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 25px 15px;
+  }
+
+  .container h2 {
+    font-size: 1.4rem;
+  }
+
+  .container ul li {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .pay-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    padding: 12px 0;
+  }
+}
